@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Game</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Pop-Game</h1>
+    </div>
+    <div class="dropdown-containers">
+        <div class="level" id="level">
+            <h1>Select Difficulty</h1>
+            <div class="dropdown-toggle">
+                <button id="levels-btn" onclick="toggleDropdown('levels')">Easy</button>
+                <ul class="dropdown" id="levels-list">
+                    <li onclick="updateButtonName('levels', 'Easy')">Easy</li>
+                    <li onclick="updateButtonName('levels', 'Medium')" class="border">Medium</li>
+                    <li onclick="updateButtonName('levels', 'Hard')">Hard</li>
+                </ul>
+            </div>
+        </div>
+        <div class="time" id="time">
+            <h1>Select Time</h1>
+            <div class="dropdown-toggle">
+                <button id="times-btn" onclick="toggleDropdown('times')">1 min</button>
+                <ul class="dropdown" id="times-list">
+                    <li onclick="updateButtonName('times', '1 min')">1 min</li>
+                    <li onclick="updateButtonName('times', '2 min')" class="border">2 min</li>
+                    <li onclick="updateButtonName('times', '3 min')">3 min</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-box">
+            Game Over
+        </div>
+        <button class="btn" onclick="startGame()">Play</button> 
+    </div>
+    <footer id="score-container">
+         
+        <!-- <span class="recent-score-container" id="1"></span>
+        <span class="recent-score-container" id="2"></span>
+        <span class="recent-score-container" id="3"></span>
+        <span class="recent-score-container" id="4"></span>
+        <span class="recent-score-container" id="5"></span> -->
+    </footer>
+    
+    <!-- Popup Game -->
+     <div id="full-modal" class="full-modal text-align">
+        <div class="score-time-heading">
+            <h1>Score: <span id="score-inside-game"></span></h1>
+            <h1 id="clock-time">0 : 0</h1>
+        </div>
+         <div id="game-box">
+            <h1 class="game-box-text">Starting...</h1>
+         </div>
+         <button class="btn m-30" onclick="closeModal()">Exit</button>
+     </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

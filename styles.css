@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+}
+body{
+    height: 100vh;
+    margin: 40px 20px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 5px;
+}
+li{
+    list-style-type: none;
+    padding: 5px;
+    width: 60px;
+}
+.dropdown{
+    border: 2px solid black;
+    padding: 0;
+    max-width: fit-content;
+    border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+}
+.border{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.show{
+    visibility: visible !important;
+}
+#game-box{
+    background-color: black;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+}
+.color-container{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    position: sticky;
+}
+.color-container:active{
+    border: 1px solid white;
+}
+.heading{
+    justify-items: center;
+    border-bottom: 1px solid black;
+    margin: 10px
+}
+.dropdown-containers{
+    display: flex;
+    place-content: space-around;    
+}
+.level, .time {
+    justify-items: center;
+}
+#levels-btn, #times-btn {
+    padding: 10px 20px;
+}
+.container-box{
+    border: 1px solid black;
+    padding: 10% 45%;
+    margin: 12px;
+    border-radius: 5px;
+}
+.container{
+    place-items: center;
+}
+.btn{
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+button{
+    cursor: pointer;
+}
+.full-modal{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: white;
+    visibility: hidden;
+    padding: 30px;
+    background-color: white;
+    width: 95%;
+}
+.game-box-text{
+    color: white;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+.recent-score-container{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 5px;
+}
+footer{
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.score-time-heading{
+    display: flex;
+    place-content: space-between;
+    margin: 5px;
+    border: 1px solid black;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: rgb(76, 73, 73);
+    color: rgb(254, 242, 242);
+}
+#clock-time{
+    border: 1px solid black;
+    padding: 0 15px;
+    border-radius: 50px;
+    background-color: rgb(252, 181, 75);
+}
+.text-align{
+    text-align: center;
+}
+.m-30{
+    margin: 30px;
+}
+li{
+    background-color: azure;
+    cursor: pointer;
+}
